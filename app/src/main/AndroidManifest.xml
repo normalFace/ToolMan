@@ -16,7 +16,17 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity2">
+            <intent-filter>
+                <action android:name="com.sssstar.toolman.MAINACTIVITY2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="sssstar"
+                    android:host="toolman"
+                    android:port="8888"
+                    android:path="/eeee"/>
+            </intent-filter>
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
